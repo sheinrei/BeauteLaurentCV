@@ -1,0 +1,143 @@
+html {
+    font-family: "Markazi Text", sans-serif;
+    font-weight: bold;
+}
+
+body {
+    font-size: 17px;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+header {
+    background-color: grey;
+}
+
+#header_name,
+#header_title {
+    text-decoration: none;
+}
+
+
+h1,
+h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+h3 {
+    text-align: center;
+}
+
+
+li {
+    line-height: 1.4em;
+}
+
+ul {
+    padding: 0;
+
+}
+
+/* content */
+
+#left {
+    background-color: rgb(202, 202, 202);
+    grid-column: 1;
+    padding: 0 20px;
+    width: 50%;
+}
+
+
+#contact,
+#langue,
+#competance,
+#savoir_etre,
+#centre_interet {
+    border: 2px solid black;
+    margin: 2em 1.5em 0em 1.5em;
+    border-radius: 1em;
+    padding: 0 30px;
+
+    box-shadow: 0 10px 15px 5px grey;
+
+}
+
+#contact {
+    margin-top: 3em;
+}
+
+#centre_interet {
+    margin-bottom: 2em;
+}
+
+
+
+/* middle */
+.content {
+    display: flex;
+
+}
+
+.container {
+    border: 1px solid black;
+    display: flex;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+
+.li_xp {
+    background-color: red;
+    margin-bottom: 20px;
+    width: 100%;
+
+}
+
+.li_xp ul {
+    padding-left: 50px
+}
+
+.formation {
+    background-color: purple;
+    margin-bottom: 20px;
+    width: 100%
+}
+
+.competence {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: fit-content;
+    margin-bottom: 20px;
+
+    box-shadow: 0 10px 10px 5px rgb(186, 186, 186);
+}
+
+.competence h2{
+    margin:10px;
+}
+
+
+.dev {
+    display: flex;
+    padding: 0 20px;
+    gap: 50px;
+
+}
+
+.profil {
+    padding: 20px 100px;
+    text-indent: 2em;
+    font-size: 1.1em;
+}
