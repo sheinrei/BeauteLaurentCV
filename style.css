@@ -12,26 +12,40 @@ body {
     padding: 30px;
 }
 
-a{
-    color:#ebff8f;
+a {
+    color: #ebff8f;
     text-decoration: none;
     font-weight: bold;
 
 }
 
-p{
+p {
     text-indent: 1.5em;
 }
 
 /* element */
 .cv {
     display: flex;
+    flex-direction: column;
     max-width: 1200px;
     margin: auto;
     background: white;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 30px;
+    background-color: #95aac0;
+    color: #ddd;
+}
+
+.content {
+    display: flex;
 }
 
 .left {
@@ -46,8 +60,8 @@ p{
     border-radius: 50%;
     margin-bottom: 20px;
 
-    position :relative;
-    left:50%;
+    position: relative;
+    left: 50%;
     transform: translateX(-50%);
 }
 
@@ -83,6 +97,11 @@ p{
     font-size: 1.2rem;
     color: #666;
     margin-bottom: 20px;
+}
+
+.profil p{
+    padding:0 30px;
+    font-weight: 600;
 }
 
 section {
@@ -127,4 +146,29 @@ section ul {
     height: 30px;
     object-fit: contain;
     margin-right: 10px;
+}
+
+@media (max-width : 812px) {
+    .cv {
+        flex-direction: column;
+    }
+
+    .content{
+        flex-direction: column;
+    }
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width:550px){
+    .competences{
+        display: flex;
+        flex-direction: column;
+    }
 }
