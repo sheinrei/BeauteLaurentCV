@@ -1,3 +1,11 @@
+:root{
+    --main-color : #6437F4;
+    --main-degrad : #5D5675;
+    --complementaire : #F5E338;
+    --complementaire-degrad : #A0995A;
+
+}
+
 html {
     font-family: "Markazi Text", sans-serif;
     font-weight: bold;
@@ -9,11 +17,26 @@ body {
 
     display: flex;
     flex-direction: column;
+    background-color: var(--main-color)
 
 }
 
 header {
-    background-color: grey;
+    background-color:var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+
+    z-index: 5;
+
+    margin-bottom:30px;
+
+}
+
+.head_content{
+
+    padding:0 140px;
+    border-radius: 10px;
 }
 
 #header_name,
@@ -22,10 +45,15 @@ header {
 }
 
 
+
 h1,
 h2 {
     text-align: center;
     text-decoration: underline;
+}
+
+h1{
+    font-size: 3em;
 }
 
 h3 {
@@ -45,25 +73,41 @@ ul {
 /* content */
 
 #left {
-    background-color: rgb(202, 202, 202);
-    grid-column: 1;
+    background-color: var(--main-degrad);
     padding: 0 20px;
-    width: 50%;
+    width: 50%; max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border:4px solid var(--complementaire-degrad);
+    border-left:none;
+    border-radius:0 10px 10px
 }
 
+
+.photo {
+    width: 160px;
+    border-radius: 50%;
+    margin-top: 50px;
+
+}
 
 #contact,
 #langue,
 #competance,
 #savoir_etre,
 #centre_interet {
-    border: 2px solid black;
+    border: 2px solid var(--main-degrad);
     margin: 2em 1.5em 0em 1.5em;
     border-radius: 1em;
     padding: 0 30px;
 
-    box-shadow: 0 10px 15px 5px grey;
+    background-color: rgb(233, 233, 233);
 
+    box-shadow: 0 10px 15px 5px var(--complementaire);
+
+    width: 50%;
 }
 
 #contact {
@@ -77,14 +121,14 @@ ul {
 
 
 /* middle */
-.content {
+.container{
     display: flex;
-
 }
 
-.container {
-    border: 1px solid black;
+.top_content{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .content {
@@ -95,21 +139,24 @@ ul {
 }
 
 .li_xp {
-    background-color: red;
     margin-bottom: 20px;
     width: 100%;
 
 }
 
-.li_xp ul {
+.li_xp ul,
+.formation ul {
     padding-left: 50px
 }
 
 .formation {
-    background-color: purple;
     margin-bottom: 20px;
-    width: 100%
+    width: 100%;
+    margin-bottom: 20px;
 }
+
+
+/* frame competence */
 
 .competence {
     display: flex;
@@ -118,14 +165,34 @@ ul {
     flex-direction: column;
     border: 1px solid black;
     border-radius: 10px;
-    width: fit-content;
+ 
     margin-bottom: 20px;
 
-    box-shadow: 0 10px 10px 5px rgb(186, 186, 186);
+    background-color: rgb(233, 233, 233);
+
+    box-shadow: 0 10px 10px 5px var(--complementaire);
 }
 
-.competence h2{
-    margin:10px;
+
+
+.competence ul{
+    list-style-type: none;
+}
+
+.logo_img{
+    height: 1em;
+    transform: translateY(25%);
+}
+
+.logo{
+    display: flex;
+    margin-bottom:12px
+}
+
+
+
+.competence h2 {
+    margin: 10px;
 }
 
 
@@ -140,4 +207,29 @@ ul {
     padding: 20px 100px;
     text-indent: 2em;
     font-size: 1.1em;
+
+
+}
+
+
+
+
+
+
+/* Element de design color rgb(174, 174, 174)*/
+.border_style,.border_style2{
+    background:var(--complementaire-degrad);
+    width: 20%;height: 150px;
+    margin: 0;
+    border-radius: 0 0 100% 0%;   
+}
+
+.border_style2{
+    border-radius:0 0 0 100%
+}
+
+.bulle{
+    width: 150px;height: 100px;
+    background-color: var(--main-color);
+    border-radius: 50%;
 }
