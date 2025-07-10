@@ -8,6 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;600&family=Oswald:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -18,141 +22,142 @@
             <h2>Développeur Web Full-Stack</h2>
         </div>
 
-<div class="content">
+        <div class="content">
             <div class="left">
-            <img class="photo" src="img/photo_LB.png" alt="Photo Laurent">
-            <h3>Contact</h3>
-            <ul>
-                <li>06.16.58.25.71</li>
-                <li>l.beaute@laposte.net</li>
-                <li>3641 route de Puycelsi 81630 Montdurausse</li>
-                <li><a href="https://linkedin.com/in/laurent-beaute-534073246" target="_blank">Mon LinkedIn</a></li>
-                <li><a href="https://github.io/sheinrei" target="_blank">Mon GitHub</a></li>
-                <li>Portfolio (A venir)</li>
-            </ul>
+                <img class="photo" src="img/photo_LB.png" alt="Photo Laurent">
+                <h3>Contact</h3>
+                <ul>
+                    <li>06.16.58.25.71</li>
+                    <li>l.beaute@laposte.net</li>
+                    <li>3641 route de Puycelsi 81630 Montdurausse</li>
+                    <li><a href="https://linkedin.com/in/laurent-beaute-534073246" target="_blank">Mon LinkedIn</a></li>
+                    <li><a href="https://github.io/sheinrei" target="_blank">Mon GitHub</a></li>
+                    <li>Portfolio (A venir)</li>
+                </ul>
 
-            <h3>Langues</h3>
-            <ul>
-                <li>Français : natif</li>
-                <li>Anglais : intermédiaire</li>
-            </ul>
+                <h3>Langues</h3>
+                <ul>
+                    <li>Français : natif</li>
+                    <li>Anglais : intermédiaire</li>
+                </ul>
 
-            <h3>Savoir-Être</h3>
-            <ul>
-                <li>Curieux</li>
-                <li>Minutieux</li>
-                <li>Ambitieux</li>
-                <li>Investi</li>
-            </ul>
+                <h3>Savoir-Être</h3>
+                <ul>
+                    <li>Curieux</li>
+                    <li>Minutieux</li>
+                    <li>Ambitieux</li>
+                    <li>Investi</li>
+                </ul>
 
-            <h3>Centres d'Intérêt</h3>
-            <ul>
-                <li>Jeux mobile</li>
-                <li>Échecs</li>
-                <li>IA</li>
-                <li>Musique (guitare)</li>
-                <li>Permaculture</li>
-            </ul>
+                <h3>Centres d'Intérêt</h3>
+                <ul>
+                    <li>Jeux mobile</li>
+                    <li>Échecs</li>
+                    <li>IA et Automatisation</li>
+                    <li>Musique (guitare)</li>
+                    <li>Permaculture</li>
+                </ul>
+            </div>
+
+            <div class="right">
+
+                <section class="profil">
+                    <h3>Profil</h3>
+                    <p>Passionné par l’informatique, je suis un développeur curieux, autonome et rigoureux. J’aime
+                        concevoir
+                        des solutions front et back efficaces, et apprendre de chaque projet. L’évolution constante du
+                        métier me motive chaque jour.</p>
+                </section>
+
+                <section class="competences">
+                    <div class="detail_competence">
+                        <h3>Front-End</h3>
+                        <ul>
+                            <li><img class="logo_img" src="img/logoHtmlCss.png" alt="">HTML/CSS</li>
+                            <li><img class="logo_img" src="img/logoJs.png" alt="">JavaScript</li>
+                            <li><img class="logo_img" src="img/logoFigma.png" alt="">Figma</li>
+                        </ul>
+                    </div>
+
+                    <div class="detail_competence">
+                        <h3>Back-End</h3>
+                        <ul>
+                            <li><img class="logo_img" src="img/logoPhp.png" alt="">PHP</li>
+                            <li><img class="logo_img" src="img/logoSymphony.png" alt="">Symfony</li>
+                            <li><img class="logo_img" src="img/logoSql.png" alt="">MySQL</li>
+                        </ul>
+                    </div>
+
+                    <div class="detail_competence">
+                        <h3>Autres</h3>
+                        <ul>
+                            <li><img class="logo_img" src="img/logoGithub.png" alt="">GitHub</li>
+                            <li><img class="logo_img" src="img/logoDocker.png" alt="">Docker</li>
+                            <li><img class="logo_img" src="img/logoLinux.png" alt="">Linux</li>
+                        </ul>
+                    </div>
+
+                </section>
+
+                <section>
+                    <h3>Savoir-Faire</h3>
+                    <ul>
+                        <li>Capacité à apprendre</li>
+                        <li>Gestion des priorités</li>
+                        <li>Maîtrise des ERP</li>
+                        <li>Lecture de documentation officielle</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Projets</h3>
+                    <ul>
+                        <li>
+                            Application météo (JS) :<br>
+                            -JavaScript animation d'apparition et suppression d'élement.<br>
+                            -Gestion stockage avec LocalStorage.
+                        </li><br>
+
+                        <li>
+                            Discographie (PHP/MYSQL/JS) :<br>
+                            -Base donnée MYSQL, implémentation complète du CRUD. <br>
+                            -Formulaire création compte utilisateur, controle de formulaire pour validation et hash du
+                            password.<br>
+                            -Création input de recherche avec affichage dynamique.
+                        </li><br>
+
+                        <li>Formulaire de paiement (PHP/JS + Stripe) :<br>
+                            -Création de formulaire de paiment.<br>
+                            -Gestion de transation avec Stripe.<br>
+                            -Controle du formulaire.<br>
+                            -Création de boite modale.
+                        </li><br>
+
+
+                        <li>Application equipement management pour jeu mobile (JS + JSON + PHP + MYSQL) -En cours -</li>
+                        <li>Jeu d'echecs (JS/PHP) - En cours -</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Expériences Pro Pre Reconversion</h3>
+                    <ul>
+                        <li>Auriol Frappe à Froid - Magasinier (2018–2024)</li>
+                        <li>Lagrange Production - Cariste (2018)</li>
+                        <li>Missions intérim diverses (2012–2017)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Formation</h3>
+                    <ul>
+                        <li>Formapedia - Dev Web (05/2025–02/2026)</li>
+                        <li>Promotrans Toulouse - Préparateur commandes (2017)</li>
+                        <li>LEPA Moissac - Bac pro paysagiste (2009–2012)</li>
+                    </ul>
+                </section>
+            </div>
         </div>
-
-        <div class="right">
-
-            <section class="profil">
-                <h3>Profil</h3>
-                <p>Passionné par l’informatique, je suis un développeur curieux, autonome et rigoureux. J’aime concevoir
-                    des solutions front et back efficaces, et apprendre de chaque projet. L’évolution constante du
-                    métier me motive chaque jour.</p>
-            </section>
-
-            <section class="competences">
-                <div class="detail_competence">
-                    <h3>Front-End</h3>
-                    <ul>
-                        <li><img class="logo_img" src="img/logoHtmlCss.png" alt="">HTML/CSS</li>
-                        <li><img class="logo_img" src="img/logoJs.png" alt="">JavaScript</li>
-                        <li><img class="logo_img" src="img/logoFigma.png" alt="">Figma</li>
-                    </ul>
-                </div>
-
-                <div class="detail_competence">
-                    <h3>Back-End</h3>
-                    <ul>
-                        <li><img class="logo_img" src="img/logoPhp.png" alt="">PHP</li>
-                        <li><img class="logo_img" src="img/logoSymphony.png" alt="">Symfony</li>
-                        <li><img class="logo_img" src="img/logoSql.png" alt="">MySQL</li>
-                    </ul>
-                </div>
-
-                <div class="detail_competence">
-                    <h3>Autres</h3>
-                    <ul>
-                        <li><img class="logo_img" src="img/logoGithub.png" alt="">GitHub</li>
-                        <li><img class="logo_img" src="img/logoDocker.png" alt="">Docker</li>
-                        <li><img class="logo_img" src="img/logoLinux.png" alt="">Linux</li>
-                    </ul>
-                </div>
-
-            </section>
-
-            <section>
-                <h3>Savoir-Faire</h3>
-                <ul>
-                    <li>Capacité à apprendre</li>
-                    <li>Gestion des priorités</li>
-                    <li>Maîtrise des ERP</li>
-                    <li>Lecture de documentation officielle</li>
-                </ul>
-            </section>
-
-            <section>
-                <h3>Projets</h3>
-                <ul>
-                    <li>
-                        Application météo (JS) :<br>
-                        -JavaScript animation d'apparition et suppression d'élement.<br>
-                        -Gestion stockage avec LocalStorage.
-                    </li><br>
-
-                    <li>
-                        Discographie (PHP/MYSQL/JS) :<br>
-                        -Base donnée MYSQL, implémentation complète du CRUD. <br>
-                        -Formulaire création compte utilisateur, controle de formulaire pour validation et hash du
-                        password.<br>
-                        -Création input de recherche avec affichage dynamique.
-                    </li><br>
-
-                    <li>Formulaire de paiement (PHP/JS + Stripe) :<br>
-                        -Création de formulaire de paiment.<br>
-                        -Gestion de transation avec Stripe.<br>
-                        -Controle du formulaire.<br>
-                        -Création de boite modale.
-                    </li><br>
-
-
-                    <li>Application equipement management pour jeu mobile (JS + JSON + PHP + MYSQL) -En cours -</li>
-                    <li>Jeu d'echecs (JS/PHP) - En cours -</li>
-                </ul>
-            </section>
-
-            <section>
-                <h3>Expériences Pro Post Reconversion</h3>
-                <ul>
-                    <li>Auriol Frappe à Froid - Magasinier (2018–2024)</li>
-                    <li>Lagrange Production - Cariste (2018)</li>
-                    <li>Missions intérim diverses (2012–2017)</li>
-                </ul>
-            </section>
-
-            <section>
-                <h3>Formation</h3>
-                <ul>
-                    <li>Formapedia - Dev Web (05/2025–02/2026)</li>
-                    <li>Promotrans Toulouse - Préparateur commandes (2017)</li>
-                    <li>LEPA Moissac - Bac pro paysagiste (2009–2012)</li>
-                </ul>
-            </section>
-        </div>
-</div>
     </div>
 </body>
 
