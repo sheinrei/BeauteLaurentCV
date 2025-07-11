@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;600&family=Oswald:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="print.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
@@ -16,15 +16,16 @@
 
 <body>
     <div class="cv">
-
+        
         <div class="intro">
             <h1>LAURENT BEAUTE</h1>
             <h2>Développeur Web Full-Stack</h2>
+            <button class="print" onclick="print()">imprimer le cv</button>
         </div>
 
         <div class="content">
             <div class="left">
-                <img class="photo" src="img/photo_LB.png" alt="Photo Laurent">
+                <img class="photo" src="img/photo.jpg" alt="Photo Laurent">
                 <h3>Contact</h3>
                 <ul>
                     <li>06.16.58.25.71</li>
@@ -116,7 +117,7 @@
                             Application météo (JS) :<br>
                             -JavaScript animation d'apparition et suppression d'élement.<br>
                             -Gestion stockage avec LocalStorage.
-                        </li><br>
+                        </li>
 
                         <li>
                             Discographie (PHP/MYSQL/JS) :<br>
@@ -124,14 +125,14 @@
                             -Formulaire création compte utilisateur, controle de formulaire pour validation et hash du
                             password.<br>
                             -Création input de recherche avec affichage dynamique.
-                        </li><br>
+                        </li>
 
                         <li>Formulaire de paiement (PHP/JS + Stripe) :<br>
                             -Création de formulaire de paiment.<br>
                             -Gestion de transation avec Stripe.<br>
                             -Controle du formulaire.<br>
                             -Création de boite modale.
-                        </li><br>
+                        </li>
 
 
                         <li>Application equipement management pour jeu mobile (JS + JSON + PHP + MYSQL) -En cours -</li>

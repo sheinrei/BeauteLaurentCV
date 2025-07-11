@@ -33,6 +33,7 @@ p {
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+
 }
 
 .intro {
@@ -42,6 +43,16 @@ p {
     padding: 35px 30px;
     background-color: #95aac0;
     color: #ddd;
+
+    position: relative;
+}
+
+.print {
+    position: absolute;
+    width: 100px;
+    bottom:10px;
+    right: 10px;
+
 }
 
 .content {
@@ -56,8 +67,8 @@ p {
 }
 
 .photo {
-    width: 160px;
-    border-radius: 50%;
+    width: 140px;height: 160px;
+    border-radius: 100%;
     margin-bottom: 20px;
 
     position: relative;
@@ -99,8 +110,8 @@ p {
     margin-bottom: 20px;
 }
 
-.profil p{
-    padding:0 30px;
+.profil p {
+    padding: 0 30px;
     font-weight: 600;
 }
 
@@ -153,9 +164,10 @@ section ul {
         flex-direction: column;
     }
 
-    .content{
+    .content {
         flex-direction: column;
     }
+
     .left {
         width: 100%;
     }
@@ -166,8 +178,8 @@ section ul {
     }
 }
 
-@media(max-width:550px){
-    .competences{
+@media(max-width:550px) {
+    .competences {
         display: flex;
         flex-direction: column;
     }
