@@ -1,0 +1,58 @@
+@media print {
+    @page {
+        size: A4 portrait;
+    }
+
+    html,
+    body {
+        width: 210mm;
+        height: 297mm;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+       
+    }
+
+    .cv {
+        width: 100%;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    .intro {
+        padding: 20px 30px
+    }
+
+    .print {
+        display: none;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .left {
+        width: 29%;
+    }
+
+    .right {
+        padding: 15px 10px;
+    }
+
+    .profil p {
+        padding: 10px 10px;
+        opacity: 1 !important;
+    }
+
+
+    .competence,
+    section {
+        margin-bottom: 15px;
+    }
+
+    .detail_competence {
+        transform: translateX(0px) !important;
+    }
+}
